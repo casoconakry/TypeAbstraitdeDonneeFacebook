@@ -8,8 +8,8 @@ public interface IPost {
 
     /* --------- Extenseurs ------- */
     IPost changeContent(String content);
-    IPost likeIt() ;
-    IPost disLikeIt();
+    IPost likeIt() throws  UnsupportedOperationException ;
+    IPost disLikeIt() throws  UnsupportedOperationException;
 
     /* ---------- Observateur  */
 
