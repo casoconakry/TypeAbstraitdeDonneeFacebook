@@ -16,7 +16,6 @@ public class CreatePost implements IPost {
     public CreatePost(int id, int like, int dislike, String contenu) {
 
         assert(id >= 0) ;
-
         this.id = id;
         this.like = like;
         this.dislike = dislike;
@@ -52,4 +51,11 @@ public class CreatePost implements IPost {
     public int getIdPost() {
         return id;
     }
+
+    @Override
+    public String getContent() {
+        return contenu;
+    }
+
+
 }

@@ -14,6 +14,7 @@ public class DefaultPost implements IPost {
         assert (id > 0 );
         this.id = id;
         this.contenu = contenu;
+
     }
 
     @Override
@@ -43,6 +44,11 @@ public class DefaultPost implements IPost {
 
     @Override
     public int getIdPost() {
-        return 0;
+        return id;
+    }
+
+    @Override
+    public String getContent() {
+        return contenu;
     }
 }
