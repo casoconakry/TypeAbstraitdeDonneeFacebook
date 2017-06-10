@@ -74,4 +74,19 @@ public interface IWall {
      */
     IPost getMostFamous() throws UnsupportedOperationException;
 
+    /**
+     * Verifie qu'un Post Existe dans le mur
+     * @param id int
+     * @return boolean
+     */
+    boolean existePost(int id);
+
+    /**
+     * Retourne le post
+     * à l'id correspondant
+     *
+     * @param id int
+     * @return Ipost
+     */
+    IPost getPostById(int id);
 }

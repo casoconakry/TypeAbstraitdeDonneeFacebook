@@ -45,4 +45,14 @@ public class EmptyWall implements IWall {
     public IPost getMostFamous() throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public boolean existePost(int id) {
+        return false;
+    }
+
+    @Override
+    public IPost getPostById(int id) {
+        return null;
+    }
 }

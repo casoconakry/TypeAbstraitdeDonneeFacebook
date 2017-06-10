@@ -52,4 +52,11 @@ public interface IPost {
      */
     int getIdPost();
 
+    /**
+     * Retourne le contenu
+     * d'un Post
+     * @return String
+     */
+    String getContent();
+
 }
